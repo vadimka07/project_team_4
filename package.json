@@ -1,0 +1,27 @@
+{
+  "name": "pproject_team_4",
+  "version": "1.1.0",
+  "description": "",
+  "main": "index.js",
+  "homepage": "https://vadimka07.github.io/project_team_4/",
+  "scripts": {
+    "dev": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /project_team_4/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vadimka07/project_team_4.git"
+  },
+  "keywords": [],
+  "author": "Vadim Gerbeda <vadger@yahoo.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vadimka07/project_team_4/issues"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0",
+    "parcel-bundler": "1.12.3",
+    "posthtml-include": "^1.6.2",
+    "sass": "^1.32.8"
+  }
+}
