@@ -1,7 +1,8 @@
-/*
- * Главный файл стилей.
- * Все паршалы подключаются сюда.
- */
+@import './base/modern-normalize';
+@import './base/defualts-styles';
 
-// Стили для файла с примером HTML-фрагмента
+@import './utils/variables';
+
+@import './components/common';
+
 @import './example';
