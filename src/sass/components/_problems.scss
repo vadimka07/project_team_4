@@ -1,0 +1,60 @@
+.problems {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  // border: 1px solid tomato;
+  background: linear-gradient(to bottom, $blackLighter 72%, $white 28%);
+}
+
+.container--problems {
+  padding: 0 20px;
+}
+
+.problems-title {
+  font-family: $ffExtraBold;
+  font-size: 20px;
+  line-height: 1.36;
+  letter-spacing: 0.03em;
+  color: $white;
+
+  &__text {
+    color: $orange;
+  }
+}
+
+.text-container {
+  margin-top: 50px;
+  margin-bottom: 27px;
+}
+
+.problems-list-container {
+  box-shadow: $problemListShadow;
+  background-color: $white;
+}
+
+.problems-list {
+  counter-reset: section;
+  list-style-type: none;
+  padding: 20px 14px 20px 30px;
+  margin: 0;
+}
+
+.problems-list__item {
+  font-family: $ffBold;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.08em;
+  position: relative;
+  padding-top: 5px;
+  margin-top: 10px;
+  padding-top: 29px;
+
+  &::before {
+    counter-increment: section;
+    content: '— ' counter(section, decimal-leading-zero);
+    color: $orange;
+    line-height: 1.214;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
