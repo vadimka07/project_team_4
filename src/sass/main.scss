@@ -4,6 +4,9 @@
 @import './base/modern-normalize';
 @import './base/default-styles';
 
+@import './utils/variables';
+@import './utils/mixins';
+
 @import './components/common';
 @import './components/header';
 @import './components/hero';

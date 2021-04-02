@@ -1,0 +1,107 @@
+.body--hidden {
+  overflow: hidden
+}
+body {
+  font-family:'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: .02em;
+  line-height: 22 / 12;
+  color: $blackLighter;
+  @include desktop  {
+    font-size: 18px;
+    line-height: 28 / 18;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 480px;
+  width: 100%;
+  @include tablet {
+    max-width: 768px;
+  }
+  @include desktop  {
+    max-width: 1345px;
+  }
+
+}
+
+h1 {
+  font-size: 20px;
+  line-height: 27 / 20;
+  font-weight: 800;
+  text-align: left;
+  letter-spacing: 0.03em;
+  @include tablet  {
+    font-size: 26px;
+    line-height: 34 / 26;
+  }
+  @include desktop  {
+    font-size: 58px;
+    line-height: 75 / 58;
+  }
+}
+
+h2 {
+  letter-spacing: 0.03em;
+  font-size: 20px;
+  line-height: 27 / 20;
+  @include tablet  {
+    font-size: 26px;
+    line-height: 34 / 26;
+  }
+  @include desktop  {
+    font-size: 46px;
+    line-height: 60 / 46;
+  }
+
+  }
+
+h3 {
+  font-size: 14px;
+  line-height: 20 / 14;
+  letter-spacing: 0.08em;
+  @include tablet  {
+    font-size: 26px;
+    line-height: 34 / 26;
+  }
+  @include desktop  {
+    font-size: 20px;
+    line-height: 28 / 20;
+  }
+
+}
+
+p {
+  font-size: 12px;
+  line-height: 20 / 12;
+  color: $grey;
+  @include desktop  {
+    font-size: 18px;
+    line-height: 28 / 18;
+  }
+}
+
+.button {
+  font-size: 12px;
+  padding: 14px 5px;
+  background-color: $orange;
+  color: $white;
+  text-transform: uppercase;
+  @include desktop  {
+    font-size: 14px;
+    padding: 26px 25px;
+  }
+}
+
+//class for error message
+.error-message {
+  color: $validationError;
+  font-size: 14px;
+}
+
+.error {
+  border-color: 1px solid $validationError;
+}
