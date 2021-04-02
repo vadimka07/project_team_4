@@ -1,3 +1,6 @@
+@import './utils/fonts';
+@import './utils/variables';
+
 @import './base/modern-normalize';
 @import './base/default-styles';
 
@@ -17,5 +20,3 @@
 @import './components/reviews';
 @import './components/contacts';
 @import './components/footer';
-
-@import './example';
