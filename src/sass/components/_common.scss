@@ -2,7 +2,7 @@
   overflow: hidden
 }
 body {
-  font-family:'Montserrat', sans-serif;
+  font-family: $ffMedium, sans-serif;
   font-size: 12px;
   font-weight: 500;
   letter-spacing: .02em;
@@ -34,6 +34,7 @@ h1 {
   font-weight: 800;
   text-align: left;
   letter-spacing: 0.03em;
+  font-family: $ffExtraBold;
   @include tablet  {
     font-size: 26px;
     line-height: 34 / 26;
@@ -48,6 +49,7 @@ h2 {
   letter-spacing: 0.03em;
   font-size: 20px;
   line-height: 27 / 20;
+  font-family: $ffExtraBold;
   @include tablet  {
     font-size: 26px;
     line-height: 34 / 26;
@@ -63,6 +65,7 @@ h3 {
   font-size: 14px;
   line-height: 20 / 14;
   letter-spacing: 0.08em;
+  font-family: $ffBold;
   @include tablet  {
     font-size: 26px;
     line-height: 34 / 26;
@@ -78,6 +81,7 @@ p {
   font-size: 12px;
   line-height: 20 / 12;
   color: $grey;
+  font-family: $ffMedium;
   @include desktop  {
     font-size: 18px;
     line-height: 28 / 18;
@@ -100,6 +104,7 @@ p {
 .error-message {
   color: $validationError;
   font-size: 14px;
+  font-family: $ffLight;
 }
 
 .error {
