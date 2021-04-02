@@ -2,13 +2,14 @@
   padding-top: 30px;
   padding-bottom: 50px;
 }
+
 .advantages__item::before {
   content: '';
   display: inline-block;
   background-repeat: no-repeat;
   margin-right: 10px;
   background-size: contain;
-  width: 59px;
+  min-width: 59px;
   height: 60px;
 }
 
