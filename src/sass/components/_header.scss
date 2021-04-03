@@ -95,7 +95,9 @@
     background-color: $black;
     position: absolute;
   }
-  &::before,
+  &::before {
+    bottom: 7px;
+  }
   &::after {
     bottom: -7px;
   }
