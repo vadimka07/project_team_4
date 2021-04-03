@@ -1,0 +1,84 @@
+.methods {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  // outline: 1px solid tomato;
+}
+
+// контейнер
+.contanier {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 480px;
+  // outline: 1px solid teal;
+}
+
+.methods__contanier {
+  // outline: 1px solid green;
+}
+
+// заголовок секции h2
+.methods__title {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+// секция с методами
+.methods__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+// карточка метода
+.methods__item {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  padding-bottom: 22px;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 280px;
+  height: 280px;
+  text-align: center;
+  box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
+}
+
+// иконка карточки
+.methods__icon {
+  fill: $orange;
+}
+
+// название метода h3
+.methods__name {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: calc(20 / 14);
+}
+
+// описание метода p
+.methods__text {
+  position: relative;
+  margin-top: 42px;
+  font-size: 12px;
+  line-height: calc(20 / 12);
+}
+
+// псевдо элемент
+.methods__text::before {
+  position: absolute;
+  content: "";
+  display: inline-flex;
+
+  margin-left: auto;
+  margin-right: auto;
+  top: -20px;
+  left: 0;
+  right: 0;
+
+  width: 20px;
+  height: 2px;
+  background-color: $orange;
+}
