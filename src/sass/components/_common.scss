@@ -92,6 +92,7 @@ p {
   padding: 14px 5px;
   background-color: $orange;
   color: $white;
+  cursor: pointer;
   text-transform: uppercase;
   @include desktop  {
     font-size: 14px;
