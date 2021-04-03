@@ -1,0 +1,66 @@
+.reviews {
+  padding: 50px 0;
+  position: relative;
+  &__list-items {
+    margin: 0;
+    padding: 0;
+  }
+  &__image-container {
+    text-align: center;
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+  }
+  &__item {
+    text-align: center;
+  }
+  &__icon {
+    fill: $IconVK;
+    display: block;
+  }
+  &__text-content {
+    margin-top: 20px;
+    padding: 0 45px;
+  }
+  &__item-title {
+    color: $orange;
+    font-family: $ffExtraBold;
+  }
+  &__short-description {
+    margin-top: 10px;
+    letter-spacing: 0.08em;
+  }
+  &__description {
+    margin-top: 10px;
+    color: $darkGrey;
+  }
+  &__item-link {
+    color: $orange;
+  }
+}
+.slide {
+  &__image {
+    margin: 0 auto;
+  }
+  &__link {
+    display: inline-block;
+    margin-top: 20px;
+  }
+}
+.main-slider {
+  box-shadow: $problemListShadow;
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.pagination-slider {
+  margin-top: 20px;
+  width: 180px;
+}
+.pagination {
+  padding: 0;
+  &__item {
+    width: 54px;
+    height: 54px;
+  }
+}
