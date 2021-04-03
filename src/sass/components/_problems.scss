@@ -3,11 +3,13 @@
   padding-bottom: 50px;
   // border: 1px solid tomato;
   background: linear-gradient(to bottom, $blackLighter 72%, $white 28%);
-
-  &__container {
-    padding: 0 20px;
-  }
 }
+
+// .container {
+//   &problems__container {
+//     padding: 0 20px;
+//   }
+// }
 
 .problems__text-container {
   margin-top: 50px;
@@ -41,7 +43,7 @@
 .problems__list-item {
   font-family: $ffBold;
   font-size: 14px;
-  line-height: 1.714;
+  line-height: 1.715;
   letter-spacing: 0.08em;
   position: relative;
   padding-top: 5px;
