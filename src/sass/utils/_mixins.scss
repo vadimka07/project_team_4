@@ -1,10 +1,18 @@
 @mixin tablet {
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     @content;
   }
 }
 @mixin desktop {
-  @media screen and (min-width: 1345px){
+  @media screen and (min-width: 1345px) {
+    @content;
+  }
+}
+
+@mixin background_img_resolution {
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
     @content;
   }
 }

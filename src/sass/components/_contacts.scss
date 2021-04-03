@@ -1,0 +1,110 @@
+.contacts--section {
+  background-color: $blackLighter;
+  background-image: url(../images/contacts_img768.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 82.5%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  align-items: center;
+  filter: drop-shadow(0 4px 4px rbga(0, 0, 0, 0.25));
+
+  @include background_img_resolution {
+    background-image: url(../images/contacts_img768@2x.png);
+  }
+}
+
+.contacts__title {
+  font-family: $ffExtraBold;
+  font-size: 14px;
+  line-height: 1.36;
+  letter-spacing: 0.03em;
+  color: $white;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.contacts__text {
+  font-family: $ffSemiBold;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.08em;
+  color: $white;
+  margin: 0 0 30px 0;
+  text-align: center;
+}
+
+.contacts__orange-text {
+  color: $orange;
+}
+
+.contacts-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts-form__label {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.contacts-form__label:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.contacts-form__label:last-child {
+  margin-bottom: 50px;
+}
+
+// .contacts-form__name {
+//   position: absolute;
+//   $ffSemiBold: 'Montserrat-SemiBold';
+//   font-size: 14px;
+//   line-height: 1.219;
+//   letter-spacing: 00.08em;
+//   color: $white;
+// }
+
+.contacts-form__input {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 48px;
+  background-color: transparent;
+  border: 1px solid $white;
+  color: $white;
+  padding-left: 28px;
+  padding-right: 28px;
+  font-family: $ffSemiBold;
+  font-size: 14px;
+  line-height: 1.219;
+  letter-spacing: 0.08em;
+  color: $white;
+
+  &::placeholder {
+    font-family: $ffSemiBold;
+    font-size: 14px;
+    line-height: 1.219;
+    letter-spacing: 0.08em;
+    color: $white;
+  }
+}
+
+.contacts-form__button {
+  display: block;
+  margin: 0 auto;
+  //   width: 260px;
+  height: 48px;
+  background-color: $orange;
+  color: $white;
+  border: none;
+  padding: 14px 10px;
+  text-transform: uppercase;
+  font-family: $ffBold;
+  font-size: 12px;
+  line-height: 1.25;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+}
