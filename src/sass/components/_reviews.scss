@@ -20,7 +20,7 @@
   }
   &__text-content {
     margin-top: 20px;
-    padding: 0 45px;
+    padding: 0 25px;
   }
   &__item-title {
     color: $orange;
@@ -36,6 +36,7 @@
   }
   &__item-link {
     color: $orange;
+    display: block;
   }
 }
 .slide {
@@ -53,6 +54,9 @@
   padding-top: 20px;
   padding-bottom: 30px;
 }
+.pagination-container {
+  position: relative;
+}
 .pagination-slider {
   margin-top: 20px;
   width: 180px;
@@ -62,5 +66,16 @@
   &__item {
     width: 54px;
     height: 54px;
+  }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: auto;
+  &:after {
+    content: '';
+  }
+  &__icon {
+    fill:$orange
   }
 }
