@@ -1,0 +1,178 @@
+ul {
+  padding: 0;
+}
+
+.program {
+  padding: 50px 0 537px 0;
+  background-color: $blackLighter;
+  background-repeat: no-repeat;
+
+  @include beforeTablet {
+    background-image: url(../images/program_mobile.png);
+    background-size: 120px 137px;
+    background-position: calc(50% + 100px) 1454px;
+
+    @media screen and (min-width: 403px) {
+      background-position: calc(50% + 100px) 1435px;
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/program_mobile@2x.png);
+    }
+  }
+
+  @include tablet {
+    padding: 60px 0 392px 0;
+  }
+
+  @include betweenTabDesk {
+    background-image: url(../images/program_tablet.png);
+    background-size: 384px 280px;
+    background-position: calc(50% + 192px) 838px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/program_tablet@2x.png);
+    }
+  }
+}
+
+.program__container {
+  outline: 2px dotted tomato;
+}
+
+.program__title {
+  margin-bottom: 43px;
+  color: $white;
+  text-align: center;
+
+  @include tablet {
+    text-align: left;
+  }
+}
+
+.program__semester-list {
+  position: relative;
+  padding-left: calc(50% - 40px);
+
+  &:before {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 1271px;
+    background-color: $white;
+    position: absolute;
+    top: 14px;
+    left: calc(50% - 67px);
+
+    @media screen and (min-width: 403px) {
+      height: 1251px;
+    }
+
+    @include tablet {
+      left: 75px;
+      height: 734px;
+    }
+  }
+
+  @include tablet {
+    padding-left: 119px;
+  }
+}
+
+.semester-list__item {
+  &:not(:last-child) {
+    margin-bottom: 40px;
+
+    @include tablet {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.semester-list__title {
+  position: relative;
+
+  margin-bottom: 5px;
+
+  font-family: $ffBold;
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: $white;
+
+  &::before {
+    content: '';
+    display: block;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    background-color: $orange;
+    position: absolute;
+    top: 8px;
+    left: -33px;
+
+    @include tablet {
+      left: -50px;
+    }
+  }
+}
+
+.skills-list {
+  @include tablet {
+    display: flex;
+  }
+}
+
+.skills-list__item {
+  font-family: $ffBold;
+  font-size: 12px;
+  line-height: 32px;
+  letter-spacing: 0.08em;
+  text-transform: initial;
+
+  &:not(:last-child) {
+    margin-bottom: 8px;
+
+    @include tablet {
+      margin-right: 50px;
+    }
+  }
+
+  @include tablet {
+    margin-bottom: 0;
+
+    &:nth-child(1) {
+      width: 176px;
+    }
+    &:nth-child(2) {
+      width: 155px;
+    }
+  }
+}
+
+.skills-list__title {
+  margin-bottom: 5px;
+
+  line-height: 2;
+  color: $orange;
+  letter-spacing: 0.08em;
+  line-height: 2.667;
+}
+
+.topics-list__item {
+  font-family: ffMedium;
+  font-size: 12px;
+  line-height: 1.667;
+  letter-spacing: 0.16em;
+  color: $grey;
+  opacity: 0.5;
+
+  @media screen and (max-width: 402px) {
+    width: 215px;
+  }
+}
