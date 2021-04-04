@@ -1,48 +1,96 @@
 .reviews {
   padding: 50px 0;
   position: relative;
+
+  &__container {
+    @include desktop {
+      position: relative;
+    }
+  }
+
   &__list-items {
     margin: 0;
     padding: 0;
   }
+
   &__image-container {
     text-align: center;
     width: 90px;
     height: 90px;
     margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    @include tablet {
+      width: 150px;
+      height: 150px;
+    }
   }
+
   &__item {
     text-align: center;
   }
+
   &__icon {
     fill: $IconVK;
     display: block;
   }
+
   &__text-content {
     margin-top: 20px;
     padding: 0 25px;
+    @include tablet {
+      text-align: left;
+      margin-top: 0;
+    }
   }
+
   &__item-title {
     color: $orange;
     font-family: $ffExtraBold;
+    @include tablet {
+      font-size: 20px;
+    }
+    @include desktop {
+      font-size: 30px;
+    }
   }
+
   &__short-description {
     margin-top: 10px;
     letter-spacing: 0.08em;
+    @include tablet {
+      margin-top: 20px;
+    }
+    @include desktop {
+      margin-top: 10px;
+      padding-right: 40%;
+      font-size: 14px;
+    }
   }
+
   &__description {
     margin-top: 10px;
     color: $darkGrey;
+    @include tablet {
+      margin-top: 20px;
+    }
   }
+
   &__item-link {
     color: $orange;
     display: block;
+    @include tablet {
+      display: inline-block;
+    }
   }
 }
+
 .slide {
+
   &__image {
     margin: 0 auto;
   }
+
   &__link {
     display: inline-block;
     margin-top: 20px;
@@ -53,29 +101,129 @@
   margin-top: 20px;
   padding-top: 20px;
   padding-bottom: 30px;
+  @include tablet {
+    margin-top: 30px;
+    padding: 40px 30px;
+  }
+  @include desktop {
+   width: 1090px;
+    padding: 50px 82px;
+  }
 }
 .pagination-container {
   position: relative;
 }
 .pagination-slider {
   margin-top: 20px;
-  width: 180px;
+  width: 188px;
+  @include tablet {
+    width: 83%;
+    margin-top: 30px;
+  }
+  @include desktop {
+    width: 525px;
+    max-width: 1000px;
+  }
 }
 .pagination {
   padding: 0;
+
   &__item {
-    width: 54px;
-    height: 54px;
+    width: 56px;
+    height: 56px;
+    cursor: pointer;
+    img {
+      border-radius: 50%;
+      border: 1px solid transparent;
+    }
   }
 }
-
+.post {
+  @include tablet {
+    display: flex;
+    padding: 0;
+  }
+}
 .swiper-button-prev,
 .swiper-button-next {
-  width: auto;
+  width: 50px;
+
   &:after {
     content: '';
   }
+
   &__icon {
     fill:$orange
   }
 }
+.swiper-button-prev {
+  right: 663px;
+  left: auto;
+  @include desktop {
+    right: auto;
+    left: 0;
+  }
+}
+.swiper-button-next {
+  left: 663px;
+  @include desktop {
+    left: auto;
+    right: 0;
+  }
+}
+.pagination-container {
+  display: flex;
+  align-items: center;
+}
+
+.arrows-container--mobile {
+  display: block;
+  @include tablet {
+    display: none;
+  }
+}
+.swiper-button-next-mobile {
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+
+.swiper-button-prev-mobile {
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+
+.swiper-button-next-mobile,
+.swiper-button-prev-mobile {
+
+  &.swiper-button-disabled{
+    opacity: .35;
+    cursor: auto;
+    pointer-events: none;
+  }
+}
+.arrows-container--desktop {
+  display: none;
+  @include tablet {
+    display: block;
+    position: relative;
+    top: -155px;
+  }
+  @include desktop {
+    top: 50%;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+  }
+}
+.swiper-slide-thumb-active {
+  pointer-events: none;
+  cursor: default;
+  img {
+    border-radius: 50%;
+    border-color: $orange;
+  }
+}
+
