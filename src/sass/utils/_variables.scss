@@ -2,11 +2,11 @@
 
 $black: #000000;
 $white: #ffffff;
-$orange: #FF6B09;
+$orange: #ff6b09;
 $blackLighter: #111518;
-$grey: #B9B9B9;
+$grey: #b9b9b9;
 $validationError: red;
-$bgColorListSectionGuarantee: #F1F1F1;
+$bgColorListSectionGuarantee: #f1f1f1;
 $bgMobileModalMenu: rgba(17, 21, 24, 0.9);
 
 //font-family variable
@@ -17,7 +17,7 @@ $ffExtraBold: 'Montserrat-ExtraBold';
 $ffSemiBold: 'Montserrat-SemiBold';
 
 $ffRegular: 'Montserrat-Regular';
-$ffThin:'Montserrat-Thin';
+$ffThin: 'Montserrat-Thin';
 $ffExtraLightItalic: 'Montserrat-ExtraLightItalic';
 $ffMediumItalic: 'Montserrat-MediumItalic';
 $ffLightItalic: 'Montserrat-LightItalic';
@@ -35,3 +35,6 @@ $problemListShadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
 
 // shadow for elements list section How We Do and slide section reviews
 $elementListShadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
+
+// cubic-bezier
+$cubicBezier: 250ms cubic-bezier(0.4, 0, 0.2, 1);
