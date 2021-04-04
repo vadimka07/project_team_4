@@ -1,4 +1,4 @@
-<section class="section contacts--section">
+<section class="section contacts--section" id="contacts">
   <div class="container contacts__container">
     <h2 class="contacts__title">
       Регистрация на <span class="contacts__orange-text">бесплатную</span> телефонную
@@ -6,17 +6,28 @@
       по нюансам ЗНО по английскому языку
     </h2>
     <p class="contacts__text">
-      Оставь заявку на участие в <span class="contacts__orange-text">бесплатном занятии.</span> С
-      вами свяжется консультант и ответит на вопросы
+      Оставь заявку на участие в <span class="contacts__orange-text">бесплатном занятии.</span>
+      <br />
+      С вами свяжется консультант и ответит на вопросы
     </p>
     <form class="contacts-form">
       <label class="contacts-form__label">
-        <span class="contacts-form__name">Имя*</span>
-        <input class="contacts-form__input" type="text" name="name" />
+        <!-- <span class="contacts-form__name">Имя*</span> -->
+        <input
+          class="contacts-form__input contacts-form__input-name"
+          type="text"
+          name="name"
+          placeholder="Имя*"
+        />
       </label>
       <label class="contacts-form__label">
-        <span class="contacts-form__name">Телефон*</span>
-        <input class="contacts-form__input" type="tel" name="phone" />
+        <!-- <span class="contacts-form__name">Телефон*</span> -->
+        <input
+          class="contacts-form__input contacts-form__input-phone"
+          type="tel"
+          name="phone"
+          placeholder="Телефон*"
+        />
       </label>
     </form>
     <button class="contacts-form__button" type="submit">хочу на бесплатное занятие</button>
