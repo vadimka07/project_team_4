@@ -22,22 +22,22 @@
 }
 
 .icon-phone {
+  margin-right: 10px;
   fill: $orange;
 }
 
-// .contacts__list {
-//   display: flex;
-//   flex-wrap: wrap;
-// }
-// .contacts__item {
-//   vertical-align:middle
-// }
+.contacts__link {
+  text-decoration: none;
+}
 
 .contacts__tel {
   font-family: "Montserrat-SemiBold";
+  letter-spacing: 0.08em;
   color: inherit;
   text-decoration: none;
   margin: 0;
+  display: flex;
+  align-items: center;
 }
 
 @media screen and (max-width: 767px) {
@@ -46,6 +46,7 @@
     width: 84px;
     margin-left: auto;
     margin-right: auto;
+    
   }
 
   .contacts__list {
@@ -57,15 +58,111 @@
   .contacts__tel {
     font-size: 14px;
     line-height: 17px;
-    display: flex;
-    align-items: center;
     justify-content: center;
   }
+
   .contacts__item {
     margin-bottom: 30px;
   }
 
   .footer {
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    padding-top: 40px;
+    padding-bottom: 0;
+  }
+
+  .footer__logo {
+    margin-left: 0;
+    display: inline-block;
+  }
+
+  .copyright__text {
+      margin-left: auto;
+      padding: 0 40px;
+  }
+
+  .contacts__item--border::before {
+    content: '';
+    width: 1px;
+    height: 40px;
+    background-color: rgba(185, 185, 185, 1);
+    margin-right: 24px;
+    margin-left: 24px;
+    display: inline-flex;
+  }
+  
+  .contacts__list {
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+
+  .contacts__tel {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .footer__contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    
+  }
+
+}
+
+@media screen and (min-width: 1345px) {
+  .footer {
+    padding-top: 52px;
+    padding-bottom: 0;
+  }
+
+  .footer__contacts {
+    position: relative;
+    padding: 0 183px;
+    padding-bottom: 53px;
+  }
+  
+  .contacts__list {
+    margin: 0 auto 0 auto;
+    }
+
+  .contacts__tel {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .footer__logo {
+    position: absolute;
+    margin-left: 0;
+  }
+
+  .copyright__text {
+    padding: 0 183px;
+  }
+
+  .copyright__text {
+    margin-left: auto;
+    padding: 0 183px;
+  }
+
+  .icon-phone {
+    width: 30px;
+    height: 28px;
+    margin-right: 15px;
+  }
+
+  .contacts__item--border::before {
+    margin-left: 16px;
   }
 }
