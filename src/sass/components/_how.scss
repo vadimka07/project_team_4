@@ -10,7 +10,16 @@
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  max-width: 480px;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1315px) {
+    width: 1315px;
+  }
+
   // outline: 1px solid teal;
 }
 
@@ -22,6 +31,9 @@
 .methods__title {
   margin-bottom: 50px;
   text-align: center;
+  @media screen and (min-width: 1315px) {
+    text-align: left;
+  }
 }
 
 // секция с методами
@@ -29,6 +41,13 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: calc(-1 * 20px);
+    margin-left: calc(-1 * 20px);
+  }
 }
 
 // карточка метода
@@ -44,6 +63,16 @@
   height: 280px;
   text-align: center;
   box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 2 - 20px);
+    width: 324px;
+    height: 324px;
+  }
+  @media screen and (min-width: 1315px) {
+    flex-basis: calc(100% / 3 - 20px);
+    width: 424px;
+    height: 396px;
+  }
 }
 
 // иконка карточки
@@ -56,6 +85,11 @@
   margin-top: 20px;
   font-size: 14px;
   line-height: calc(20 / 14);
+  @media screen and (min-width: 1315px) {
+    display: block;
+    margin-top: 20px;
+    line-height: calc(28 / 20);
+  }
 }
 
 // описание метода p
@@ -64,6 +98,11 @@
   margin-top: 42px;
   font-size: 12px;
   line-height: calc(20 / 12);
+  @media screen and (min-width: 1315px) {
+    display: block;
+    margin-top: 42px;
+    line-height: calc(28 / 18);
+  }
 }
 
 // псевдо элемент
