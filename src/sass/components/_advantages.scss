@@ -3,6 +3,18 @@
   padding-bottom: 50px;
 }
 
+.advantages__title {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.advantages__text {
+  $ffBold: 'Montserrat-Bold';
+  font-size: 14px;
+  line-height: 20px;
+}
+
 .advantages__item::before {
   content: '';
   display: inline-block;
@@ -28,13 +40,53 @@
 .advantages__list {
   list-style: none;
   margin: 0;
+  padding: 0;
+
 }
 
-.advantages__item:not(:last-child) {
-  margin-bottom: 30px;
-}
+@media screen and (max-width: 767px) {
+  .advantages__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 
+  .advantages__list {
+    width: 216px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+ 
 .advantages__item {
   display: inline-flex;
   align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages {
+    padding-top: 50px;
+  }
+
+  .advantages__list {
+    display: flex;
+    margin-left: -20px;
+    margin-top: -20px;
+    padding: 0;
+  }
+
+  .advantages__item {
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 1345px) {
+  .advantages__text {
+    margin-left: -20px;
+    width: calc(366px - 20px);
+  }
+
+  .advantages__item::before {
+    min-width: 100px;
+    height: 102px;
+  }
 }
