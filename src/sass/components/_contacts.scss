@@ -14,16 +14,25 @@
   }
 
   @include tablet {
+    // background-image: url(../images/contacts_1345.png);
     padding-bottom: 71px;
     background-position: center;
     height: 520px;
+
+    // @include background_img_resolution {
+    //   background-image: url(../images/contacts_1345@2x.png);
+    // }
   }
 
   @include desktop {
-    // position: relative;
+    background-image: url(../images/contacts_1345.png);
     padding-top: 100px;
     padding-bottom: 62px;
     height: 840px;
+
+    @include background_img_resolution {
+      background-image: url(../images/contacts_1345@2x.png);
+    }
   }
 }
 
