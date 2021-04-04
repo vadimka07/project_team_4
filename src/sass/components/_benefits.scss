@@ -1,5 +1,13 @@
 .benefits {
   margin-top: -505px;
+
+  @include tablet {
+    margin-top: -203px;
+  }
+}
+
+.benefits__container {
+  outline: 2px dotted tomato;
 }
 
 .benefits__list-wrapper {
@@ -9,8 +17,24 @@
   width: 100%;
   max-width: 280px;
 
-  background-image: linear-gradient(to bottom, transparent 80px, $white 80px);
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+
+  @include beforeTablet {
+    background-image: linear-gradient(to bottom, transparent 80px, $white 80px);
+  }
+
+  @include tablet {
+    max-width: 100%;
+    padding: 0 118px 25px 98px;
+  }
+
+  @include betweenTabDesk {
+    background-image: linear-gradient(to bottom, transparent 62px, $white 62px);
+  }
+
+  @include desktop {
+    background-color: $white;
+  }
 }
 
 .benefits__title {
@@ -20,12 +44,41 @@
 
   color: $white;
   text-align: left;
+
+  @include tablet {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 93px;
+    margin-left: 0;
+  }
+
+  @include desktop {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 }
 
 .benefits__list {
   margin: 0;
   padding: 0;
   counter-reset: benefits;
+
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    margin-left: -20px;
+    margin-top: -63px;
+  }
 }
 
 .benefits__item {
@@ -39,6 +92,10 @@
 
   &:not(:last-child) {
     margin-bottom: 53px;
+
+    @include tablet {
+      margin-bottom: 0;
+    }
   }
 
   &::before {
@@ -47,5 +104,11 @@
     content: '— ' counter(benefits, decimal-leading-zero);
     color: $orange;
     top: -30px;
+  }
+
+  @include tablet {
+    flex-basis: calc(100% / 2 - 20px);
+    margin-left: 20px;
+    margin-top: 63px;
   }
 }
