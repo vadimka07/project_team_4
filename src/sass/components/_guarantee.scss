@@ -47,8 +47,12 @@
 
   @include desktop {
     max-width: 1314px;
+    // width: 1314px;
+    // height: 395px;
     padding-left: 164px;
     padding-right: 112px;
+    padding-top: 50px;
+    padding-bottom: 45px;
   }
 }
 
@@ -79,7 +83,9 @@
   @include desktop {
     font-size: 20px;
     line-height: 1.4;
-    // max-width: 1038px;
+    max-width: 1038px;
+    height: 60px;
+    // width: 1038px;
   }
 }
 
@@ -123,11 +129,4 @@
 
 .guarantee__text--orange {
   color: $orange;
-}
-
-.guarantee__svg {
-  position: absolute;
-  width: 14.67px;
-  height: 20px;
-  fill: $orange;
 }

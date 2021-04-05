@@ -1,0 +1,25 @@
+.modal-menu__nav {
+  padding: 0;
+  @include tablet {
+    display: inline-block;
+    margin: 0 auto;
+  }
+}
+.modal-menu__nav-wrapper {
+  display: flex;
+  margin-top: 32px;
+  @include tablet {
+    margin-top: 73px;
+  }
+}
+.modal-menu__page-link {
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 180%;
+  letter-spacing: 0.06em;
+  color: $white;
+  @include tablet {
+    font-size: 26px;
+  }
+}

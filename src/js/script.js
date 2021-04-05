@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener('DOMContentLoaded', function () {
   const galleryThumbs = new Swiper('.pagination-slider', {
     spaceBetween: 10,
     slidesPerView: 1,
@@ -18,8 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
       1345: {
         slidesPerView: 7,
         spaceBetween: 20,
-
-      }
+      },
     },
   });
 
@@ -48,13 +47,60 @@ document.addEventListener("DOMContentLoaded", function () {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
         },
-      }
+      },
     },
 
     thumbs: {
-      swiper: galleryThumbs
-    }
+      swiper: galleryThumbs,
+    },
+  });
+  document.querySelectorAll('.header__list-item a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+//
+  (() => {
+    const mobileMenu = document.querySelector('.js-menu-container');
+    const openMenuBtn = document.querySelector('.js-open-menu');
+    const closeMenuBtn = document.querySelector('.js-close-menu');
+    const closeMenuItem = document.querySelectorAll('.modal-menu__nav-item');
+    const toggleMenu = () => {
+      const isMenuOpen = openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
+      openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
+      mobileMenu.classList.toggle('is-open');
+      closeMenuItem.forEach(item => {
+        item.addEventListener('click', function () {
+          mobileMenu.classList.remove('is-open');
+          openMenuBtn.setAttribute('aria-expanded', false);
+        });
+      });
+    };
+    document.querySelectorAll( '.modal-menu__nav-item a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        console.log('click');
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
 
-  })
+    openMenuBtn.addEventListener('click', toggleMenu);
+    closeMenuBtn.addEventListener('click', toggleMenu);
 
+    // Закрываем мобильное меню на более широких экранах
+    // в случае изменения ориентации устройства.
+    window.matchMedia('(min-width: 1345px)').addEventListener('change', e => {
+      if (!e.matches) return;
+      mobileMenu.classList.remove('is-open');
+      openMenuBtn.setAttribute('aria-expanded', false);
+    });
+  })();
 });
+
+
+

@@ -1,0 +1,14 @@
+.modal-menu__button {
+  background-color: rgba(0, 0, 0, 0);
+  color: $orange;
+  border: 2px solid $orange;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  display: block;
+  margin: 51px auto 0;
+  padding: 15px;
+  @include tablet {
+    display: none;
+  }
+}

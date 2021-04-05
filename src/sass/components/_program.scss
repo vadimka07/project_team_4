@@ -1,8 +1,13 @@
-ul {
+.topics-list,
+.skills-list,
+.semester-list {
   padding: 0;
 }
 
 .program {
+  position: relative;
+  z-index: 1;
+
   padding: 50px 0 537px 0;
   background-color: $blackLighter;
   background-repeat: no-repeat;
@@ -38,10 +43,38 @@ ul {
       background-image: url(../images/program_tablet@2x.png);
     }
   }
+
+  @include desktop {
+    background-image: url(../images/program_desktop.png);
+    background-size: 668px 560px;
+    background-position: calc(50% - 501px) 660px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/program_desktop@2x.png);
+    }
+  }
+
+  @include desktop {
+    padding: 120px 0 363px;
+  }
+
+  @include desktop {
+    &::before {
+      position: absolute;
+      top: 291px;
+      content: '';
+      width: 100%;
+      height: 1px;
+      display: block;
+      background-color: $white;
+    }
+  }
 }
 
 .program__container {
-  outline: 2px dotted tomato;
+  // outline: 2px dotted tomato;
 }
 
 .program__title {
@@ -52,9 +85,13 @@ ul {
   @include tablet {
     text-align: left;
   }
+
+  @include desktop {
+    margin-bottom: 160px;
+  }
 }
 
-.program__semester-list {
+.semester-list {
   position: relative;
   padding-left: calc(50% - 40px);
 
@@ -76,10 +113,19 @@ ul {
       left: 75px;
       height: 734px;
     }
+
+    @include desktop {
+      display: none;
+    }
   }
 
   @include tablet {
     padding-left: 119px;
+  }
+
+  @include desktop {
+    display: flex;
+    padding-left: 0;
   }
 }
 
@@ -89,6 +135,14 @@ ul {
 
     @include tablet {
       margin-bottom: 30px;
+    }
+  }
+
+  @include desktop {
+    width: 240px;
+
+    &:not(:last-child) {
+      margin-right: 30px;
     }
   }
 }
@@ -119,11 +173,26 @@ ul {
     @include tablet {
       left: -50px;
     }
+
+    @include desktop {
+      top: -55px;
+      left: 0;
+    }
+  }
+
+  @include desktop {
+    &::first-letter {
+      font-size: 30px;
+      line-height: 1;
+    }
+    margin-bottom: 25px;
+    font-size: 20px;
+    line-height: 1.4;
   }
 }
 
 .skills-list {
-  @include tablet {
+  @include betweenTabDesk {
     display: flex;
   }
 }
@@ -138,12 +207,12 @@ ul {
   &:not(:last-child) {
     margin-bottom: 8px;
 
-    @include tablet {
+    @include betweenTabDesk {
       margin-right: 50px;
     }
   }
 
-  @include tablet {
+  @include betweenTabDesk {
     margin-bottom: 0;
 
     &:nth-child(1) {
@@ -162,17 +231,28 @@ ul {
   color: $orange;
   letter-spacing: 0.08em;
   line-height: 2.667;
+
+  @include desktop {
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 1.65;
+  }
 }
 
 .topics-list__item {
-  font-family: ffMedium;
+  font-family: $ffMedium;
   font-size: 12px;
   line-height: 1.667;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.08em;
   color: $grey;
   opacity: 0.5;
 
   @media screen and (max-width: 402px) {
-    width: 215px;
+    max-width: 215px;
+  }
+
+  @include desktop {
+    font-size: 18px;
+    line-height: 1.55;
   }
 }

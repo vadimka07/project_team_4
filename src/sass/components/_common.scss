@@ -98,9 +98,34 @@ p {
   color: $white;
   cursor: pointer;
   text-transform: uppercase;
+  transition: all 150ms ease-in-out;
+  appearance: none;
+  -webkit-appearance: none;
+  border: 2px solid $orange;
+  overflow: hidden;
+  position: relative;
   @include desktop  {
     font-size: 14px;
     padding: 26px 25px;
+  }
+  &:after {
+    background: #fff;
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: .2;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 750ms cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+    z-index: 0;
+  }
+  &:hover {
+    &:after {
+      left: 120%;
+      transition: all 750ms cubic-bezier(0.19, 1, 0.22, 1);
+    }
   }
 }
 

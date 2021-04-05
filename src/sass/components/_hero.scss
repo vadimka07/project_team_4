@@ -1,18 +1,18 @@
 .hero {
-  padding: 20px 0 40px;
+  padding: 20px 0 60px;
   background-image: url(../images/wave.png);
   background-blend-mode: multiply;
   background-repeat: no-repeat;
-  background-position: 15% 57%;
+  background-position: 15% 73%;
   background-size: 267% 118%;
   @include tablet {
-    padding-top: 30px;
+    padding-top: 30 0 120px;
     background-size: 100% 132%;
-    background-position: 15% 79%;
+    background-position: 15% 85%;
   }
   @include desktop {
-    padding: 97px 0;
-    background-position: 37% 79%;
+    padding: 97px 0 120px;
+    background-position: 37% 85%;
   }
 }
 
@@ -96,14 +96,14 @@
   margin: 0 auto;
   @include tablet {
     margin-top: 14px;
-    width: 390px;
+    width: 400px;
     height: 316px;
   }
   @include desktop {
     position: absolute;
-    width: 848px;
-    height: 718px;
-    right: -118px;
+    width: 727px;
+    height: 618px;
+    right: 0px;
     top: -88px;
   }
 }

@@ -1,6 +1,9 @@
 .reviews {
   padding: 50px 0;
   position: relative;
+  @include desktop {
+    padding: 130px 0;
+  }
 
   &__container {
     @include desktop {
@@ -41,7 +44,13 @@
     @include tablet {
       text-align: left;
       margin-top: 0;
+      padding-left: 46px;
+      padding-right: 15px;
     }
+    @include desktop {
+      padding-left: 40px;
+    }
+
   }
 
   &__item-title {
