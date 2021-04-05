@@ -1,4 +1,4 @@
-.about--section {
+.about {
   margin-top: 39px;
   margin-bottom: 51px;
   @include tablet {
@@ -10,17 +10,7 @@
     margin-bottom: 129px;
   }
 }
-
-.about__description {
-  @include tablet {
-    display: flex;
-  }
-}
-.about-list__images {
-  margin-bottom: 20px;
-  display: block;
-}
-.section-about__title {
+.about__title {
   font-size: 20px;
   letter-spacing: 0.08em;
   margin-bottom: 20px;
@@ -39,7 +29,17 @@
     margin-bottom: 50px;
   }
 }
-.picture__item {
+.about__description {
+  @include tablet {
+    display: flex;
+  }
+}
+.about-list__images {
+  margin-bottom: 20px;
+  display: block;
+}
+
+.about__image {
   width: 100%;
   padding-right: 37px;
   box-sizing: border-box;
@@ -50,7 +50,7 @@
     padding: 0px;
   }
 }
-.blok-about__description {
+.teacher {
   @include tablet {
     width: 402px;
     margin-left: 41px;
@@ -60,7 +60,7 @@
     margin-left: 10px;
   }
 }
-.teacher_title {
+.teacher__title {
   border-bottom: 1px solid $grey;
   padding-bottom: 10px;
   font-weight: normal;
@@ -93,22 +93,8 @@
     border-bottom: 3px solid $orange;
   }
 }
-// .about__item {
-//   &:not(:last-child) {
-//     padding-bottom: 22px;
-//     @include tablet {
-//       padding-bottom: 29px;
-//     }
-//     @include desktop {
-//       padding-bottom: 34px;
-//     }
-//   }
-//   &:last-of-type {
-//     margin-bottom: 22px;
-//   }
-// }
 
-.teacher__description {
+.teacher__short-description {
   font-size: 14px;
   font-family: $ffSemiBold;
   color: $blackLighter;
@@ -121,7 +107,7 @@
     letter-spacing: 0.06em;
   }
 }
-.about__item {
+.teacher__item {
   &:not(:last-child) {
     padding-bottom: 22px;
     @include tablet {
@@ -143,7 +129,7 @@
   }
 }
 
-.about-description__title {
+.teacher__text {
   font-size: 12px;
   line-height: 20px;
   font-family: $ffMedium;
