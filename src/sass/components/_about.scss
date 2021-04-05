@@ -1,13 +1,13 @@
 .about {
   padding-top: 39px;
-  padding-bottom: 51px;
+  padding-bottom: 50px;
   @include tablet {
     padding-top: 50px;
     padding-bottom: 50px;
   }
   @include desktop {
     padding-top: 130px;
-    padding-bottom: 129px;
+    padding-bottom: 130px;
   }
 }
 .about__title {
@@ -63,7 +63,7 @@
   }
   @include desktop {
     width: 672px;
-    margin-left: 30px;
+    margin-left: 31px;
   }
 }
 .teacher__title {
@@ -80,7 +80,7 @@
   @include desktop {
     font-size: 30px;
     line-height: 37px;
-    padding-bottom: 14px;
+    padding-bottom: 15px;
   }
 }
 .teacher__list {
@@ -90,7 +90,7 @@
   margin-top: 20px;
   @include desktop {
     margin-bottom: 32px;
-    margin-top: 32px;
+    margin-top: 30px;
   }
   &::after {
     display: block;
@@ -155,10 +155,10 @@
   &:last-of-type {
     margin-bottom: 10px;
     @include tablet {
-      margin-bottom: 15px;
+      margin-bottom: 10px;
     }
     @include desktop {
-      margin-bottom: 24px;
+      margin-bottom: 20px;
     }
   }
 }
