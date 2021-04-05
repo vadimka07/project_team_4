@@ -14,13 +14,13 @@
   padding-left: 15px;
   padding-right: 15px;
   @media screen and (min-width: 480px) {
-    width: 320px;
+    max-width: 350px;
   }
   @media screen and (min-width: 768px) {
-    width: 728px;
+    max-width: 728px;
   }
   @media screen and (min-width: 1315px) {
-    width: 1315px;
+    max-width: 1345px;
   }
 
   // outline: 1px solid teal;
