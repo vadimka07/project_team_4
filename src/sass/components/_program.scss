@@ -240,10 +240,10 @@
 }
 
 .topics-list__item {
-  font-family: ffMedium;
+  font-family: $ffMedium;
   font-size: 12px;
   line-height: 1.667;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.08em;
   color: $grey;
   opacity: 0.5;
 
