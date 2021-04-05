@@ -1,5 +1,5 @@
 .copyright {
-  font-family: "Montserrat-Medium";
+  font-family: 'Montserrat-Medium';
   font-size: 14px;
   line-height: 28px;
   background-color: $bgMobileModalMenu;
@@ -8,7 +8,7 @@
 }
 
 .footer {
-  padding: 30px 0;
+  padding-top: 30px;
 }
 
 .icon-inst {
@@ -31,7 +31,7 @@
 }
 
 .contacts__tel {
-  font-family: "Montserrat-SemiBold";
+  font-family: 'Montserrat-SemiBold';
   letter-spacing: 0.08em;
   color: inherit;
   text-decoration: none;
@@ -46,7 +46,6 @@
     width: 84px;
     margin-left: auto;
     margin-right: auto;
-    
   }
 
   .contacts__list {
@@ -77,13 +76,12 @@
   }
 
   .footer__logo {
-    margin-left: 0;
     display: inline-block;
   }
 
-  .copyright__text {
-      margin-left: auto;
-      padding: 0 40px;
+  .container--position {
+    display: flex;
+    align-items: center;
   }
 
   .contacts__item--border::before {
@@ -95,7 +93,7 @@
     margin-left: 24px;
     display: inline-flex;
   }
-  
+
   .contacts__list {
     display: flex;
     align-items: center;
@@ -103,22 +101,20 @@
     margin-bottom: 0;
   }
 
-
   .contacts__tel {
     font-size: 20px;
     line-height: 24px;
   }
 
   .footer__contacts {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding-bottom: 40px;
-    padding-left: 40px;
-    padding-right: 40px;
-    
   }
+}
 
+@media screen and (min-width: 768px) and (max-width: 1344px) {
+  .container--position {
+    justify-content: space-between;
+  }
 }
 
 @media screen and (min-width: 1345px) {
@@ -128,32 +124,16 @@
   }
 
   .footer__contacts {
-    position: relative;
-    padding: 0 183px;
     padding-bottom: 53px;
   }
-  
   .contacts__list {
-    margin: 0 auto 0 auto;
-    }
+    margin-left: 290px;
+    padding: 0;
+  }
 
   .contacts__tel {
     font-size: 30px;
     line-height: 36px;
-  }
-
-  .footer__logo {
-    position: absolute;
-    margin-left: 0;
-  }
-
-  .copyright__text {
-    padding: 0 183px;
-  }
-
-  .copyright__text {
-    margin-left: auto;
-    padding: 0 183px;
   }
 
   .icon-phone {
