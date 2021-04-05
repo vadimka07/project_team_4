@@ -4,7 +4,7 @@
       <a class="header__link-logo" href="./index.html">
         <img class="header__logo" src="./images/logo.svg" alt="" />
       </a>
-      <div class="header__wrapper-links">
+      <div class="header__menu  id="header-menu" data-menu">
         <ul class="header__list-links">
           <li class="header__list-item">
             <a class="header__link-list" href="#">Программы обучения</a>
@@ -20,7 +20,13 @@
           </li>
         </ul>
         <button class="button header__button">Консультация по телефону</button>
-        <button class="header__toggle-menu">
+        <button
+          class="header__toggle-menu js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          data-menu-button
+        >
           <span class="header__burger"></span>
         </button>
       </div>
