@@ -15,10 +15,12 @@
   @include beforeTablet {
     background-image: url(../images/program_mobile.png);
     background-size: 120px 137px;
-    background-position: calc(50% + 100px) 1454px;
+    background-position: 100% 1454px;
+    // background-position: calc(50% + 100px) 1454px;
 
-    @media screen and (min-width: 403px) {
-      background-position: calc(50% + 100px) 1435px;
+    @media screen and (min-width: 415px) {
+      background-position: 100% 1435px;
+      // background-position: calc(50% + 100px) 1435px;
     }
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -35,7 +37,8 @@
   @include betweenTabDesk {
     background-image: url(../images/program_tablet.png);
     background-size: 384px 280px;
-    background-position: calc(50% + 192px) 838px;
+    background-position: 100% 838px;
+    // background-position: calc(50% + 192px) 838px;
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
@@ -47,7 +50,8 @@
   @include desktop {
     background-image: url(../images/program_desktop.png);
     background-size: 668px 560px;
-    background-position: calc(50% - 501px) 660px;
+    background-position: 0 660px;
+    // background-position: calc(50% - 501px) 660px;
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
@@ -106,7 +110,11 @@
     left: calc(50% - 67px);
 
     @media screen and (min-width: 403px) {
-      height: 1251px;
+      height: 1269px;
+    }
+
+    @media screen and (min-width: 415px) {
+      height: 1252px;
     }
 
     @include tablet {
