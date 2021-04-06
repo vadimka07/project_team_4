@@ -12,12 +12,16 @@
   }
 }
 
+.benefits__container {
+  outline: 2px solid tomato;
+}
+
 .benefits__list-wrapper {
   margin: 0 auto;
 
   padding: 0 30px 20px;
   width: 100%;
-  max-width: 280px;
+  // max-width: 280px;
 
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
 
