@@ -9,17 +9,22 @@
 
 // контейнер
 .contanier {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 480px;
+  width: 100%;
+  // margin-left: auto;
+  // margin-right: auto;
+
   @media screen and (min-width: 480px) {
-    max-width: 350px;
+    // max-width: 320px;
   }
   @media screen and (min-width: 768px) {
     max-width: 728px;
   }
   @media screen and (min-width: 1315px) {
+    padding-left: 15px;
+    padding-right: 15px;
     max-width: 1345px;
   }
 
@@ -57,8 +62,7 @@
 // карточка метода
 .methods__item {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 
   padding-top: 30px;
   // padding-bottom: 22px;
@@ -86,7 +90,7 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .methods__item:not(:last-child) {
     margin-bottom: 15px;
   }
