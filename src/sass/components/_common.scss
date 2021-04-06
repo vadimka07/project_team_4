@@ -139,3 +139,21 @@ p {
 .error {
   border-color: 1px solid $validationError;
 }
+
+#scroll-top {
+  position: fixed;
+  background: $orange;
+  width: 50px;
+  height: 50px;
+  right: 10px;
+  bottom: 25px;
+  z-index: 25;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  cursor: pointer;
+  padding-bottom: 7px;
+}
