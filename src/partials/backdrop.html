@@ -1,0 +1,67 @@
+<div class="backdrop backdrop__hidden" data-backdrop>
+  <div class="modal">
+    <div class="modal__close-wrapper">
+      <!-- button close -->
+      <button class="modal__close-btn" aria-label="кнопка закрытия формы отправки" data-modal-close>
+        <span class="modal__close"></span>
+      </button>
+      <p class="modal__data-request">Оставьте свои данные, мы вам перезвоним</p>
+      <!-- fill fields -->
+      <form class="modal__form" autocomplete="off">
+        <label class="modal__form-field">
+          <input
+            type="text"
+            class="modal__form-input"
+            name="name"
+            aria-label="строка для ввода имени"
+            placeholder="Дед Мороз"
+            pattern="[A-Za-zА-Яа-яЁёІіЇїЄє' ]{1,25}"
+          />
+          <span class="modal__form-label">Имя</span>
+        </label>
+        <label class="modal__form-field">
+          <input
+            type="text"
+            class="modal__form-input"
+            name="tel"
+            aria-label="строка для ввода телефона"
+            placeholder="+38 096 600 00 01"
+            pattern="[?+0-9]{1,15}"
+          />
+          <span class="modal__form-label">Телефон</span>
+        </label>
+        <label class="modal__form-field">
+          <input
+            type="text"
+            class="modal__form-input"
+            name="email"
+            aria-label="строка для ввода электронной почты"
+            placeholder=" GoiT@gmail.com "
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+          />
+          <span class="modal__form-label">Почта</span>
+        </label>
+        <label class="modal__form-field modal__form-field--textarea">
+          <span class="modal__form-label">Коментарий</span>
+          <textarea
+            class="modal__form-input modal__form-input--comment"
+            name="comment"
+            cols="30"
+            rows="8"
+            aria-label="строка для коментариев"
+            placeholder=" "
+          ></textarea>
+          <span class="modal__form-label modal__form-label--placeholder">Введите текст</span>
+        </label>
+
+        <button
+          class="button modal__btn"
+          type="submit"
+          aria-label="кнопка для отправки своих данных"
+        >
+          Отправить
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+.backdrop {
+  position: fixed;
+  z-index: 6;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: $colorBackdrop;
+
+  opacity: 1;
+  transform: perspective(600px) translate(0px, 0%) rotateX(0deg);
+  transition: transform $cubicBezierMenu, opacity $cubicBezierMenu;
+}
+.backdrop__hidden {
+  pointer-events: none;
+
+  opacity: 0.5;
+  transform: perspective(600px) translate(0px, 80%) rotateX(-61deg);
+}

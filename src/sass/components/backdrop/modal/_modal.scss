@@ -1,0 +1,13 @@
+.modal {
+  position: relative;
+  width: 450px;
+  min-height: 560px;
+  padding: 40px 41px;
+  background: $white;
+  border-radius: $borderRadius;
+  @include box-shadow;
+}
+
+@import './_close';
+@import './_form';
+@import './_btn';

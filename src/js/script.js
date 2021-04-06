@@ -58,16 +58,18 @@ document.addEventListener('DOMContentLoaded', function () {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
       document.querySelector(this.getAttribute('href')).scrollIntoView({
-        behavior: 'smooth'
+        behavior: 'smooth',
       });
     });
   });
-//
+  // ==================
+  // === modal-menu ===
+  // ==================
   (() => {
     const mobileMenu = document.querySelector('.js-menu-container');
     const openMenuBtn = document.querySelector('.js-open-menu');
     const closeMenuBtn = document.querySelector('.js-close-menu');
-    const closeMenuItem = document.querySelectorAll('.modal-menu__nav-item');
+    const closeMenuItem = document.querySelectorAll('.js-close-popup');
     const toggleMenu = () => {
       const isMenuOpen = openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
       openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
@@ -79,12 +81,12 @@ document.addEventListener('DOMContentLoaded', function () {
         });
       });
     };
-    document.querySelectorAll( '.modal-menu__nav-item a[href^="#"]').forEach(anchor => {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
         console.log('click');
         document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
+          behavior: 'smooth',
         });
       });
     });
@@ -101,6 +103,23 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   })();
 });
+// ==================
+//  === backdrop ====
+// ==================
+(() => {
+  const refs = {
+    openModalBtn: document.querySelector('[data-modal-open]'),
+    openModalPopUp: document.querySelector('[data-modal-openPopUp]'),
+    closeModalBtn: document.querySelector('[data-modal-close]'),
+    backdrop: document.querySelector('[data-backdrop]'),
+  };
 
+  refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.openModalPopUp.addEventListener('click', toggleModal);
+  refs.closeModalBtn.addEventListener('click', toggleModal);
 
-
+  function toggleModal() {
+    document.body.classList.toggle('modal-open');
+    refs.backdrop.classList.toggle('backdrop__hidden');
+  }
+})();

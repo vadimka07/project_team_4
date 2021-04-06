@@ -1,8 +1,8 @@
 <div class="modal-menu js-menu-container" id="mobile-menu">
   <div class="container">
     <div class="modal-menu__top-line">
-      <a class="header__link-logo" href="./index.html">
-        <img class="header__logo" src="./images/logo-popup.svg" alt="" />
+      <a class="modal-menu__link-logo" href="./index.html">
+        <img class="modal-menu__logo" src="./images/logo-popup.svg" alt="" />
       </a>
       <button
         class="modal-menu__close-btn js-close-menu"
@@ -15,22 +15,26 @@
     <div class="modal-menu__nav-wrapper">
       <ul class="modal-menu__nav">
         <li class="modal-menu__nav-item">
-          <a href="#program" class="modal-menu__page-link modal-menu__page-link--current">
-            Программа обучения</a
-          >
+          <a href="#program" class="modal-menu__page-link js-close-popup"> Программа обучения</a>
         </li>
         <li class="modal-menu__nav-item">
-          <a href="#about" class="modal-menu__page-link"> О нас</a>
+          <a href="#about" class="modal-menu__page-link js-close-popup"> О нас</a>
         </li>
         <li class="modal-menu__nav-item">
-          <a href="#benefits" class="modal-menu__page-link">Варианты обучения</a>
+          <a href="#benefits" class="modal-menu__page-link js-close-popup">Варианты обучения</a>
         </li>
         <li class="modal-menu__nav-item">
-          <a href="#contacts" class="modal-menu__page-link">Конакты</a>
+          <a href="#contacts" class="modal-menu__page-link js-close-popup">Конакты</a>
         </li>
       </ul>
     </div>
 
-    <button class="button modal-menu__button">Консультация по телефону</button>
+    <button
+      class="button modal-menu__button js-close-popup"
+      aria-label="кнопка консультация по телефону"
+      data-modal-openPopUp
+    >
+      Консультация по телефону
+    </button>
   </div>
 </div>

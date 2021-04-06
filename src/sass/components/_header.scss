@@ -1,6 +1,10 @@
 .header {
+  position: fixed;
+  z-index: 5;
+  width: 100%;
   padding-top: 30px;
   padding-bottom: 30px;
+  background-color: $white;
 
   @include tablet {
     padding: 42px 0;
@@ -23,16 +27,31 @@
 .header__nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  //   align-items: center;
 }
 
-.header__link-logo {
+.header__icon-logo {
   display: block;
   width: 80px;
   height: 28px;
   @include tablet {
     width: 128px;
     height: 45px;
+  }
+}
+
+.header__link-logo {
+  display: block;
+  width: 80px;
+  height: 28px;
+  //   transition: background-color $cubicBezier, box-shadow $cubicBezier;
+  //   &:hover {
+  //     background-color: $bgLogo;
+  //     @include box-shadow-logo;
+  //   }
+  @include tablet {
+    width: 129px;
+    height: 46px;
   }
 }
 
@@ -121,5 +140,10 @@
   }
   &::after {
     bottom: -7px;
+  }
+  .header__toggle-menu:hover > &::before,
+  .header__toggle-menu:hover > &::after,
+  .header__toggle-menu:hover > & {
+    background-color: $orange;
   }
 }

@@ -12,6 +12,7 @@
     margin-top: 73px;
   }
 }
+
 .modal-menu__page-link {
   text-decoration: none;
   font-weight: 800;
@@ -19,6 +20,12 @@
   line-height: 180%;
   letter-spacing: 0.06em;
   color: $white;
+  cursor: pointer;
+  transition: color $cubicBezier;
+  &:hover,
+  &focus {
+    color: $orange;
+  }
   @include tablet {
     font-size: 26px;
   }

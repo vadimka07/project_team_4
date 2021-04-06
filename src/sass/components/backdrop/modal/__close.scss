@@ -1,0 +1,54 @@
+.modal__close-btn {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 8px;
+  right: 8px;
+  width: 32px;
+  height: 32px;
+  border: transparent;
+  background-color: $white;
+  cursor: pointer;
+}
+
+.modal__close {
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    top: 13px;
+    left: 3px;
+    display: block;
+    height: 3px;
+    width: 25px;
+    background-color: $black;
+  }
+  &:before {
+    transform: rotate(45deg);
+  }
+  &:after {
+    transform: rotate(-45deg);
+  }
+  .modal__close-btn:hover > &:before,
+  .modal__close-btn:hover > &:after,
+  .modal__close-btn:focus > &:before,
+  .modal__close-btn:focus > &:after {
+    background-color: $orange;
+  }
+}
+
+.modal-menu__link-logo {
+  display: block;
+  width: 80px;
+  height: 28px;
+  transition: background-color $cubicBezier, box-shadow $cubicBezier;
+  &:hover {
+    background-color: $bgLogo;
+    @include box-shadow-logo;
+  }
+  @include tablet {
+    width: 129px;
+    height: 46px;
+  }
+}
