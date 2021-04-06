@@ -11,6 +11,7 @@
   overflow: hidden;
 
   padding: 50px 0 537px 0;
+
   background-color: $blackLighter;
   background-repeat: no-repeat;
 
@@ -18,11 +19,9 @@
     background-image: url(../images/program_mobile.png);
     background-size: 120px 137px;
     background-position: 100% 1458px;
-    // background-position: calc(50% + 100px) 1454px;
 
     @media screen and (min-width: 415px) {
       background-position: 100% 1439px;
-      // background-position: calc(50% + 100px) 1435px;
     }
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -32,15 +31,12 @@
     }
   }
 
-  @include tablet {
-    padding: 60px 0 392px 0;
-  }
-
   @include betweenTabDesk {
+    padding: 60px 0 392px 0;
+
     background-image: url(../images/program_tablet.png);
     background-size: 384px 280px;
     background-position: 100% 817px;
-    // background-position: calc(50% + 192px) 838px;
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
@@ -50,9 +46,10 @@
   }
 
   @include desktop {
+    padding: 120px 0 363px;
+
     background-image: url(../images/program_desktop.png);
     background-size: 668px 560px;
-
     background-position: calc(50% - 504px) 676px;
 
     @media screen and (min-width: 1674px) {
@@ -64,13 +61,7 @@
       screen and (min-resolution: 2dppx) {
       background-image: url(../images/program_desktop@2x.png);
     }
-  }
 
-  @include desktop {
-    padding: 120px 0 363px;
-  }
-
-  @include desktop {
     &::before {
       position: absolute;
       top: 277px;
@@ -81,10 +72,6 @@
       background-color: $white;
     }
   }
-}
-
-.program__container {
-  // outline: 2px dotted tomato;
 }
 
 .program__title {
@@ -111,10 +98,10 @@
     display: block;
     width: 1px;
     height: 1271px;
-    background-color: $white;
     position: absolute;
     top: 14px;
     left: calc(50% - 67px);
+    background-color: $white;
 
     @media screen and (min-width: 403px) {
       height: 1269px;
@@ -150,6 +137,10 @@
 
     @include tablet {
       margin-bottom: 22px;
+    }
+
+    @include desktop {
+      margin-bottom: 0;
     }
   }
 
@@ -202,6 +193,7 @@
       font-size: 30px;
       line-height: 1;
     }
+
     margin-bottom: 20px;
     font-size: 20px;
     line-height: 1.4;

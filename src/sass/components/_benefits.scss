@@ -17,7 +17,6 @@
 
   padding: 0 30px 20px;
   width: 100%;
-  // max-width: 280px;
 
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
 
@@ -43,16 +42,19 @@
 .benefits__title {
   margin-left: -30px;
   margin-bottom: 77px;
+
   width: 180px;
 
   color: $white;
   text-align: left;
 
   @include tablet {
-    width: 100%;
-    text-align: center;
     margin-bottom: 91px;
     margin-left: 0;
+
+    width: 100%;
+
+    text-align: center;
   }
 
   @include desktop {
@@ -76,11 +78,12 @@
   counter-reset: benefits;
 
   @include tablet {
-    display: flex;
-    flex-wrap: wrap;
     margin-bottom: 0;
     margin-left: -40px;
     margin-top: -63px;
+
+    display: flex;
+    flex-wrap: wrap;
   }
 
   @include desktop {
@@ -124,15 +127,18 @@
   }
 
   @include tablet {
-    flex-basis: calc(100% / 2 - 40px);
     margin-left: 40px;
     margin-top: 63px;
+
+    flex-basis: calc(100% / 2 - 40px);
   }
 
   @include desktop {
-    flex-basis: calc(100% / 3 - 40px);
     margin-left: 40px;
     margin-top: 75px;
+
+    flex-basis: calc(100% / 3 - 40px);
+
     font-size: 20px;
     line-height: 1.4;
   }
