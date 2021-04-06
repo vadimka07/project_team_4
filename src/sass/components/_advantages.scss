@@ -41,7 +41,6 @@
   list-style: none;
   margin: 0;
   padding: 0;
-
 }
 
 @media screen and (max-width: 767px) {
@@ -55,7 +54,7 @@
     margin-right: auto;
   }
 }
- 
+
 .advantages__item {
   display: inline-flex;
   align-items: center;
@@ -80,6 +79,10 @@
 }
 
 @media screen and (min-width: 1345px) {
+  .advantages {
+    padding-bottom: 130px;
+  }
+
   .advantages__text {
     margin-left: -20px;
     padding-right: 40px;

@@ -5,14 +5,16 @@
 
   @media (min-width: 768px) {
     background: linear-gradient(to bottom, $blackLighter 64%, $white 36%);
+    padding-top: 60px;
   }
 
   @media (min-width: 1345px) {
     background: url(../images/fire-problems.svg),
       linear-gradient(to bottom, $blackLighter 73%, $white 27%);
-
     background-repeat: no-repeat;
     background-position: 104% 20%;
+    padding-top: 100px;
+    padding-bottom: 130px;
   }
 }
 
@@ -68,14 +70,11 @@
   @media (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 74px;
-    margin-right: 109px;
-    padding: 0 0 26px 0;
+    padding: 0 47px 26px 96px;
   }
 
   @media (min-width: 1345px) {
-    padding: 70px 0 62px 0;
-    margin-right: 112px;
+    padding: 70px 112px 62px 114px;
   }
 }
 
