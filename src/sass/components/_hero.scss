@@ -78,7 +78,7 @@
   margin: 30px auto 30px;
   display: block;
   width: 260px;
-  height: 50px;
+  padding: 14px 10px;
   text-decoration: none;
   font-weight: bold;
   text-align: center;
@@ -94,17 +94,19 @@
   }
 }
 .hero__button-link {
-  // 	font-family: Montserrat;
-  // font-style: normal;
-  // font-weight: bold;
-  // font-size: 12px;
-  // line-height: 15px;
-  // display: flex;
-  // align-items: center;
-  // text-align: center;
-  // letter-spacing: 0.08em;
+  //  display: block;
+  // margin: 0 auto;
+  // height: 48px;
+  // background-color: #ff7409;
+  // color: #ffffff;
+  // border: none;
+  // padding: 14px 10px;
   // text-transform: uppercase;
-  // color: #FFFFFF;
+  // font-family: "Montserrat-Bold";
+  // font-size: 12px;
+  // line-height: 1.219;
+  // letter-spacing: 0.08em;
+  // cursor: pointer;
 }
 
 .hero__thumb {
