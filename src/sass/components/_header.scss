@@ -44,11 +44,11 @@
   display: block;
   width: 80px;
   height: 28px;
-  //   transition: background-color $cubicBezier, box-shadow $cubicBezier;
-  //   &:hover {
-  //     background-color: $bgLogo;
-  //     @include box-shadow-logo;
-  //   }
+  transition: background-color $cubicBezier, box-shadow $cubicBezier;
+  &:hover {
+    background-color: $bgLogo;
+    @include box-shadow-logo;
+  }
   @include tablet {
     width: 129px;
     height: 46px;
@@ -126,6 +126,7 @@
   margin-top: 6px;
   margin-bottom: 6px;
   position: relative;
+  transition: background-color $cubicBezier;
   &::after,
   &::before {
     content: '';
@@ -134,6 +135,7 @@
     height: 2px;
     background-color: $black;
     position: absolute;
+    transition: background-color $cubicBezier;
   }
   &::before {
     bottom: 7px;
@@ -143,7 +145,10 @@
   }
   .header__toggle-menu:hover > &::before,
   .header__toggle-menu:hover > &::after,
-  .header__toggle-menu:hover > & {
+  .header__toggle-menu:hover > &,
+  .header__toggle-menu:focus > &::before,
+  .header__toggle-menu:focus > &::after,
+  .header__toggle-menu:focus > & {
     background-color: $orange;
   }
 }
