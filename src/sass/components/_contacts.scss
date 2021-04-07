@@ -14,14 +14,9 @@
   }
 
   @include tablet {
-    // background-image: url(../images/contacts_1345.png);
     padding-bottom: 71px;
     background-position: center;
     height: 520px;
-
-    // @include background_img_resolution {
-    //   background-image: url(../images/contacts_1345@2x.png);
-    // }
   }
 
   @include desktop {
@@ -52,7 +47,6 @@
   }
 
   @include desktop {
-    // font-family: $ffExtraBold;
     font-size: 46px;
     line-height: 1.3;
     letter-spacing: 0.03em;
@@ -125,15 +119,6 @@
   }
 }
 
-// .contacts-form__name {
-//   position: absolute;
-//   $ffSemiBold: 'Montserrat-SemiBold';
-//   font-size: 14px;
-//   line-height: 1.219;
-//   letter-spacing: 00.08em;
-//   color: $white;
-// }
-
 .contacts-form__input {
   position: relative;
   display: block;
@@ -172,7 +157,6 @@
 .contacts-form__button {
   display: block;
   margin: 0 auto;
-  //   width: 260px;
   height: 48px;
   background-color: $orange;
   color: $white;
