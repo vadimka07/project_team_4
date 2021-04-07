@@ -1,5 +1,6 @@
 .header {
   position: fixed;
+  top: 0;
   z-index: 12;
   width: 100%;
   padding-top: 30px;
@@ -94,8 +95,8 @@
   background-color: rgba(0, 0, 0, 0);
   color: $orange;
   border: 2px solid $orange;
-  font-weight: 700;
-  letter-spacing: 0.08em;
+  font-family: $ffBold;
+  letter-spacing: 0.06em;
   cursor: pointer;
   @include tablet {
     width: 260px;
