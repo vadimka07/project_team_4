@@ -70,12 +70,19 @@ const scrollTop = document.getElementById('scroll-top');
       swiper: galleryThumbs,
     },
   } );
-  document.querySelectorAll( '.header__list-item a[href^="#"]' ).forEach( anchor => {
+  const headerRef = document.querySelector('.header');
+  document.querySelectorAll( '.modal-menu__nav, .header__list-links' ).forEach( anchor => {
     anchor.addEventListener( 'click', function( e ) {
       e.preventDefault();
-      document.querySelector( this.getAttribute( 'href' ) ).scrollIntoView( {
+      console.log(e.target);
+      if(e.target.nodeName !== 'A'){
+        return;
+      }
+      const elementToScroll = document.querySelector(e.target.hash);
+      window.scrollTo({
         behavior: 'smooth',
-      } );
+        top: elementToScroll.offsetTop - headerRef.offsetHeight
+      })
     } );
   } );
   // ==================
@@ -97,14 +104,6 @@ const scrollTop = document.getElementById('scroll-top');
         } );
       } );
     };
-    document.querySelectorAll( 'a[href^="#"]' ).forEach( anchor => {
-      anchor.addEventListener( 'click', function( e ) {
-        e.preventDefault();
-        document.querySelector( this.getAttribute( 'href' ) ).scrollIntoView( {
-          behavior: 'smooth',
-        } );
-      } );
-    } );
 
     openMenuBtn.addEventListener( 'click', toggleMenu );
     closeMenuBtn.addEventListener( 'click', toggleMenu );
