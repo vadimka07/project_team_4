@@ -158,6 +158,16 @@ p {
   padding-bottom: 7px;
 }
 
+.header__button {
+  -webkit-transition: box-shadow 300ms ease-in-out;
+  transition: box-shadow 300ms ease-in-out;
+}
+.header__button:hover {
+  //box-shadow: 0 0 40px 40px $orange inset;
+  background-color:$orange;
+  color: $white;
+}
+
 .methods__icon path {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;

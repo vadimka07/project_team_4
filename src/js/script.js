@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function () {
     },
   });
   const headerRef = document.querySelector('.header');
-  document.querySelectorAll('.modal-menu__nav, .header__list-links').forEach(anchor => {
+  document.querySelectorAll('.modal-menu__nav, .header__list-links, .hero__wrapper-content').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
       console.log(e.target);
