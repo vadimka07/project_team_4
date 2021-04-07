@@ -88,7 +88,6 @@ document.addEventListener('DOMContentLoaded', function () {
   document.querySelectorAll('.modal-menu__nav, .header__list-links, .hero__wrapper-content').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
-      console.log(e.target);
       if (e.target.nodeName !== 'A') {
         return;
       }
