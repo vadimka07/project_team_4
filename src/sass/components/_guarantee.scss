@@ -47,8 +47,6 @@
 
   @include desktop {
     max-width: 1314px;
-    // width: 1314px;
-    // height: 395px;
     padding-left: 164px;
     padding-right: 112px;
     padding-top: 50px;
@@ -85,7 +83,6 @@
     line-height: 1.4;
     max-width: 1038px;
     height: 60px;
-    // width: 1038px;
   }
 }
 
@@ -105,7 +102,6 @@
 
     @include tablet {
       height: 30px;
-      // width: 2px;
     }
 
     @include desktop {
@@ -120,12 +116,6 @@
     margin-bottom: 20px;
   }
 }
-
-// .guarantee__item:last-child {
-//   @include tablet {
-//     margin-bottom: 30px;
-//   }
-// }
 
 .guarantee__text--orange {
   color: $orange;
