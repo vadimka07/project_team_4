@@ -53,7 +53,6 @@ document.addEventListener( 'DOMContentLoaded', function() {
   } );
 
   const galleryTop = new Swiper( '.main-slider', {
-    // Navigation arrows
     spaceBetween: 10,
     slidesPerView: 1,
     breakpoints: {
